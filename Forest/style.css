@@ -1,0 +1,78 @@
+.mainBody {
+  /* position: absolute; */
+  width: 100vw;
+}
+
+
+.gradient-background {
+  background: linear-gradient(300deg, #ffd700, #ffa500);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+.gradient-background2 {
+  background: linear-gradient(300deg, #ffd700, #ffa500);
+    /* background-size: 180% 180%; */
+    animation: gradient-animation 18s ease infinite;
+}
+
+.gradient-background2>img {
+  width: 100%
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.fourBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* .buttonContainer {
+  width: 100%;
+  display: flex;
+  
+  justify-content: center;
+} */
+.buttonContainer{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  top: 86%; /* Adjust the top value as needed */
+  left: 50%;
+  z-index: 10000;
+  transform: translate(-50%, 0); /* Center the container horizontally */
+
+}
+.floatingButton {
+  all: unset;
+  text-decoration-style: solid;
+  text-align: center;
+  font-size: 2.5rem;
+  z-index: 100;
+  top: 90%;
+  left: 50%;
+  padding: 5px 20px;
+  background-color: rgba(255, 165, 0, 0.5); /* Saffron color with 50% transparency */
+  border: 1px solid black;
+  border-radius: 5rem;
+  color: black; /* Set text color to white for better visibility */
+}
+
+.floatingButton:hover {
+  
+  color: #fff; /* Change font color to white on hover */
+}
